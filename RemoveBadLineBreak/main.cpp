@@ -108,9 +108,7 @@ void removeBadLineBreak(char* filepath) {
 
 int main(int argc, char* argv[]) {
 
-	//char a[] = { "C:\\Users\\grklimt3\\source\\repos\\RemoveLineBreak\\Debug\\temp.txt" };
-
-	for (int i = 0; i < argc; i++) {
+	for (int i = 1; i < argc; i++) {
 		if (isFileFormatTXT(argv[i])) {
 			removeBadLineBreak(argv[i]);
 			printf("OK       %s\n", argv[i]);
@@ -119,9 +117,8 @@ int main(int argc, char* argv[]) {
 			printf("NO       %s\n", argv[i]);
 
 	}
-	//removeBadLineBreak(a);
 
-	getchar();
-
+	printf("제거가 완료되었습니다.\n");
+	
 	return 0;
 }
