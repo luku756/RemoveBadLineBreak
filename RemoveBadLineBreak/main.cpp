@@ -89,7 +89,7 @@ void removeBadLineBreak(char* filepath) {
 		//나쁜 줄바꿈을 제거
 		if (flag == BADLINEBREAK) {
 			len = strlen(buf[id]);
-			buf[id][len - 1] = 0;
+			buf[id][len - 1] = ' ';
 		}
 
 		//출력파일에 출력
